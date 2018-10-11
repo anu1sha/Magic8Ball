@@ -3,6 +3,7 @@ package lickingheights.com;
 import java.awt.*;
 import java.util.Scanner;
 
+
 public class Main {
 
     public static void main(String[] args) {
@@ -14,10 +15,13 @@ public class Main {
         int number;
         int value;
         int testing;
+        String Question;
 
         int ten;
         ten = 10;
         String question;
+        int pickedNumber;
+
 
 
 
@@ -26,30 +30,32 @@ public class Main {
         greeting = keyboard.nextLine();
         System.out.println("Would you like to use the magic 8 ball?");
         consent = keyboard.nextLine();
-        System.out.println("okay, go ahead and ask a question");
-        question = keyboard.nextLine();
-        System.out.println("Okay, pick a number between 0-100");
-        number = keyboard.nextInt();
+        System.out.println("You can go ahead and ask a question");
+        Question = keyboard.nextLine();
+        System.out.println( "Can you give me a number between 1-100?");
+        pickedNumber = keyboard.nextInt();
 
-        if (ten>number)
+
+
+        if (ten>pickedNumber)
             System.out.println("Definitely you should");
-        else if (number<20)
-            System.out.println("I could not understand ask again");
-        else if (number<30)
+        else if (pickedNumber<20)
+            System.out.println("Absolutely Yes");
+        else if (pickedNumber<30)
             System.out.println("Yes, Most definitely");
-        else if (number<40)
-            System.out.println("Maybe you should consider your options first");
-        else if (number<50)
+        else if (pickedNumber<40)
+            System.out.println("Definitely");
+        else if (pickedNumber<50)
             System.out.println("No Definitely no");
-        else if (number<60)
+        else if (pickedNumber<60)
            System.out.println("Yes go for it");
-        else if (number<70)
+        else if (pickedNumber<70)
             System.out.println("Don't count on it");
-        else if (number<80)
+        else if (pickedNumber<80)
             System.out.println("my sources say yes");
-        else if (number<90)
+        else if (pickedNumber<90)
             System.out.println("My sources say no");
-        else if (number<100)
+        else if (pickedNumber<100)
             System.out.println("I thought about it long and hard but it is not likely");
 
 
